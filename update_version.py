@@ -7,7 +7,10 @@ if __version__ == "0+unknown":
     print("No commits made to this repo. Using whatever is defined in pyproject")
     sys.exit()
 re_version = re.search(r"^\d+\.\d+\.\d+\.post(\d+)", __version__)
-assert re_version is not None
+if re_version is None:
+    raise ValueError(
+        "Version from versioneer not in supported format. Check if you have set a tag with the version number, which is what versioneer uses to create the version number."
+    )
 num_post_versioneer = re_version.groups()[0]
 
 # update pyproject
