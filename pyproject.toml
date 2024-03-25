@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "new-app"
-version = "0.1.0.post0.dev0+gd2b4a77"
+version = "0.1.0.post1.dev0+gcec4276"
 description = ""
 authors = ["Daniel Stoops <danielstoops25@gmail.co.il>"]
 readme = "README.md"

@@ -55,9 +55,3 @@ repos:
         language: system
         pass_filenames: false
         always_run: true
-    -   id: tox
-        name: tox
-        entry: tox
-        language: system
-        pass_filenames: false
-        stages: [pre-push, pre-merge-commit]
